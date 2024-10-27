@@ -1,0 +1,91 @@
+$font : Poppins , sans-serif;
+$color : white;
+$color2:rgb(52, 52, 58);
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family : $font;
+}
+.left-side{
+    background-color: $color2;
+    color: white;
+    .personal-cv-image{
+        max-width: 270px;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .personalInfo{
+        h1{
+            font-size: 25px;
+        }
+    }
+    .list-heading{
+        list-style-type: none;
+        font-size: 25px;
+    }
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    // align-items: center;
+}
+.more-about-me-button-phone{
+    display: none;
+}
+.GitHub{
+    a{
+        text-decoration: none;
+        color: $color2;
+        font-weight: bold;
+        font-size: 30px;
+        
+        
+    }
+}
+
+@media screen and (max-width: 600px){
+    .table-reference{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 1024px){
+    [class*="col-"] {
+        width: 100%;
+      }
+      
+      .left-side{
+
+      .personalInfo{
+        h1,p{
+            text-align: center;
+        }
+      }
+      .skills, .Languages, .SPORT-HOBBIES {
+        h2{
+            text-align: center;
+
+        }
+        ul{
+            list-style-type: none;
+            text-align: center;
+        }
+      }
+ }
+
+
+.why-want-study, .good-future-developer, .previous-experience{
+    h1{
+        font-size: 25px;
+    }
+}
+.more-about-me-button{
+    display: none;
+ }
+ .more-about-me-button-phone{
+    display: block;
+}
+}

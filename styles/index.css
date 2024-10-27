@@ -1,0 +1,81 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.left-side {
+  background-color: rgb(52, 52, 58);
+  color: white;
+}
+.left-side .personal-cv-image {
+  max-width: 270px;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.left-side .personalInfo h1 {
+  font-size: 25px;
+}
+.left-side .list-heading {
+  list-style-type: none;
+  font-size: 25px;
+}
+
+.right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.more-about-me-button-phone {
+  display: none;
+}
+
+.GitHub a {
+  text-decoration: none;
+  color: rgb(52, 52, 58);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .table-reference {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  [class*=col-] {
+    width: 100%;
+  }
+  .left-side .personalInfo h1, .left-side .personalInfo p {
+    text-align: center;
+  }
+  .left-side .skills h2, .left-side .Languages h2, .left-side .SPORT-HOBBIES h2 {
+    text-align: center;
+  }
+  .left-side .skills ul, .left-side .Languages ul, .left-side .SPORT-HOBBIES ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  .why-want-study h1, .good-future-developer h1, .previous-experience h1 {
+    font-size: 25px;
+  }
+  .more-about-me-button {
+    display: none;
+  }
+  .more-about-me-button-phone {
+    display: block;
+  }
+}
