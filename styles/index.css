@@ -47,7 +47,7 @@ body {
   text-decoration: none;
   color: rgb(52, 52, 58);
   font-weight: bold;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 @media screen and (max-width: 600px) {
